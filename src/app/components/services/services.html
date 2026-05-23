@@ -1,0 +1,35 @@
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="main-title">التخصصات التي نعمل بها</h2>
+      <p class="sub-title">نقدم أفضل الحلول في أنظمة المراقبة والشبكات والأنظمة الذكية</p>
+    </div>
+    <div class="row g-4">
+      @for (service of services; track $index) {
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="service-card">
+
+            <div class="img-box">
+              <img [src]=" service.img" alt="">
+            </div>
+
+            <h5 class="service-title">
+              {{service.title}}
+            </h5>
+
+            <a [href]="service.link" target="_blank" class="btn btn-service">
+              عرض المنتجات
+            </a>
+
+          </div>
+        </div>
+      }
+    </div>
+    <div class="text-center mt-5">
+      <a href="https://smartxeg.com/" target="_blank" class="btn main-btn">
+        الرجوع إلى الموقع الرئيسي
+      </a>
+    </div>
+
+  </div>
+</section>

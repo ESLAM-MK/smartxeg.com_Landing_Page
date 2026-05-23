@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold " href="https://smartxeg.com/" target="_blank">
+        <label class="text-black ">SMART</label>-X</a>
+    <button 
+      class="navbar-toggler text-white border-0" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <button class="nav-link btn text-white" (click)="scrollTo('hero-section')">
+            الرئيسية
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link btn text-white" (click)="scrollTo('about')">
+          من نحن
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link btn text-white" (click)="scrollTo('services')">
+        اهم الخدمات و المميزات
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link btn text-white " (click)="scrollTo('contacts')">
+            تواصل معنا
+          </button>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

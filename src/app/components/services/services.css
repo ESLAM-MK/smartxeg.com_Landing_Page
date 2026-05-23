@@ -1,0 +1,88 @@
+.services-section {
+  padding: 80px 0;
+  /* background: #f8f9fb; */
+    /* background: linear-gradient(135deg, #ff5500, #ff5500); */
+background: linear-gradient(135deg, #f2efed, #ff5500);
+
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.sub-title {
+  color:white;
+  margin-top: 10px;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.img-box {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box img {
+  max-width: 150px;
+  transition: 0.3s;
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.service-title {
+  font-size: 15px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.btn-service {
+  background: #ff5500;
+  color: #fff;
+  border-radius: 30px;
+  padding: 8px 20px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-service:hover {
+  background: #f5cbb6;
+  color: black;
+}
+
+.main-btn {
+  background: #111;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.main-btn:hover {
+  background: #333;
+}

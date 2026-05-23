@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+<section  id="about" class="about-section py-5">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="text-center mb-5 fade-up" [class.show]="visible">
+      <h2 class="display-5 section-title">من نحن</h2>
+      <p class="text-light fs-5 mt-3">
+        شركة متخصصة في تقديم أحدث الحلول الأمنية والتقنية التي تساعدك على حماية أعمالك وممتلكاتك بأعلى مستوى من الاحترافية
+      </p>
+    </div>
+
+    <!-- GRID -->
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4"
+           *ngFor="let item of aboutData"
+           [class.fade-up]="true"
+           [class.show]="visible">
+
+        <div class="about-box text-center">
+          <i class="bi" [ngClass]="item.icon"></i>
+          <h4 class="fw-bold mt-3">{{item.title}}</h4>
+          <p class="text-light">
+            {{item.desc}}
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-box text-center fade-up mt-5" [class.show]="visible">
+      <h3 class="fw-bold mb-3">هل تبحث عن نظام أمني متكامل؟</h3>
+      <p class="text-dark mb-4">
+        تواصل معنا الآن ودعنا نساعدك في اختيار الحل الأمثل لحماية مشروعك أو منزلك
+      </p>
+
+      <a href="https://smartxeg.com/"
+         class="btn btn-light px-5 py-3 rounded-pill fw-bold cta-btn">
+        تصفح الموقع الآن
+      </a>
+    </div>
+
+  </div>
+</section>
